@@ -1,8 +1,141 @@
-/* Global colors */
+html {
+  box-sizing: border-box;
+}
+
+/* GLOBAL FONTS AND COLORS */
 :root {
+  /* Font family */
+  --primary-font: Inter, Arial, sans-serif;
+  --secondary-font: Lora, Arial, sans-serif;
+
+  /* Font sizes */
+  --fs-base: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
+  --fs-xxl: 58px;
+  --fs-hero: 78px;
+  --fs-popup: 48px;
+  --fs-copyright: 14px;
+
+  /* Font weights */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line heights */
+  --lh-base: 24px;
+  --lh-lg: 29.5px;
+  --lh-xl: 60px;
+  --lh-hero: 78px;
+  --lh-popup: 54px;
+  --lh-preheadline: 16px;
+  --lh-copyright: 21px;
+  --lh-form-placeholder: 26px;
+
+  /* Letter spacing */
+  --ls-none: 0px;
+  --ls-tight: -2px; /* -2px */
+  --ls-wide: 8px; /* 8px */
+
+  /* Colors */
   --primary-color: #e23125;
   --background-color-rgb: 249, 224, 226;
   /* --background-color: rgb(var(--background-color-rgb)); */
   --background-color-100: rgb(var(--background-color-rgb), 1);
-  --background-color-80: rgb(var(var(--background-color-rgb), 0.8));
+  --background-color-80: rgb(var(--background-color-rgb), 0.8);
+}
+
+/* GLOBAL FONT STYLES */
+body {
+  font-family: var(--primary-font);
+  font-size: var(--fs-base);
+  font-weight: var(--weight-normal);
+  line-height: var(--lh-base);
+  letter-spacing: var(--ls-none);
+  color: var(--primary-color);
+}
+
+.hero-title,
+.not-found-page-text,
+.footer-cta-title {
+  font-family: var(--secondary-font);
+  font-size: var(--fs-hero);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-hero);
+  text-transform: capitalize;
+}
+
+.primary-headline {
+  font-family: var(--secondary-font);
+  font-size: var(--fs-xxl);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-xl);
+  letter-spacing: var(--ls-tight);
+  text-transform: capitalize;
+}
+
+.pre-primary-headline {
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-preheadline);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+.secondary-headline,
+.subscription-headline {
+  font-size: var(--fs-xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--lh-lg);
+  text-transform: capitalize;
+}
+
+.secondary-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--weight-semibold);
+  line-height: var(--lh-lg);
+  text-transform: capitalize;
+}
+
+.pop-up-title {
+  font-size: var(--fs-popup);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-popup);
+  text-transform: capitalize;
+}
+
+.button-text {
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.employs-name-text,
+.testimonials-company-names-text {
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+}
+
+.text-link,
+.footer-titles {
+  font-weight: var(--weight-semibold);
+  text-transform: capitalize;
+}
+
+.nav-menu-text {
+  font-weight: var(--weight-medium);
+  line-height: var(--lh-preheadline);
+  text-transform: capitalize;
+}
+
+.form-field-place-holder-text {
+  font-weight: var(--weight-light);
+  line-height: var(--lh-form-placeholder);
+  text-transform: capitalize;
+}
+
+.copyright-text {
+  font-size: var(--fs-copyright);
+  line-height: var(--lh-copyright);
+  letter-spacing: var(--lh-copyright);
 }
