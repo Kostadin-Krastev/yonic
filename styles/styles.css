@@ -1,0 +1,8 @@
+/* Global colors */
+:root {
+  --primary-color: #e23125;
+  --background-color-rgb: 249, 224, 226;
+  /* --background-color: rgb(var(--background-color-rgb)); */
+  --background-color-100: rgb(var(--background-color-rgb), 1);
+  --background-color-80: rgb(var(var(--background-color-rgb), 0.8));
+}
